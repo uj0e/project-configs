@@ -40,3 +40,14 @@ springdoc:
     doc-expansion: none
   paths-to-match:
     - /**
+
+
+# 유레카 설정
+eureka:
+  instance:
+    hostname: ${hostname}
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${eureka.server}/eureka/
